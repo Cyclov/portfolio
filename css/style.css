@@ -1,8 +1,27 @@
 
 
+body{
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+}
+
 .dark{
     background-color:#232326;
     color:#F3F2F0;
+}
+
+.dark .nav-link {
+    color:#F3F2F0;
+}
+
+
+.light .nav-link {
+    color:#010101; 
+}
+
+.light{
+    background-color:#F3F2F0;
+    color:#010101;
 }
 
 .wrapper{
@@ -13,27 +32,73 @@
     padding-right: 15px;
 }
 
-body{
-    font-family: 'Inter', sans-serif;
+header{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+.nav{
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
 
 }
 
-.nav{
-    list-style: none;
+.nav-item{
+
+padding-left: 16px;
+padding-right: 16px;
+
+}
+
+.nav-item:first-child{
+    
+    padding-left: 0;
+   
+}
+
+.nav-item:last-child{
+
+         padding-right: 0px;
+
 }
 
 .nav-link{
     text-decoration: none;
-    color:#F3F2F0;
     font-size:14px;
-   }
+}
 
-   .nav-link:hover{
+.nav-link:hover{
     text-decoration: none;
     color:#D40000 ;
     font-size:14px;
-   }
+}
 
+.social{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 15px;
+    padding-bottom: 60px;
+}
+
+.project{
+    margin:0;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.project-img{
+  
+    width: 16px;
+    height: 12px;
+    display: block;
+    background-image: url(../img/Arrow.svg);
+ 
+}
 
 .photo{
 
@@ -57,3 +122,28 @@ body{
 
 }
 
+.title-h3{
+ 
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+ 
+
+}
+
+.skill{
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill-item{
+ flex: 0 0 24%;
+}
+
+.skill .title-h3{
+   text-transform: uppercase;
+}
+
+.skill .description{
+    line-height: 150%;
+ }
