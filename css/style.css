@@ -14,6 +14,14 @@ body{
     color:#F3F2F0;
 }
 
+.dark .circle circle{
+  fill: #D40000;  
+}
+
+.dark .triangle path{
+    fill: #ffffff;  
+  }
+
 
 .light .nav-link {
     color:#010101; 
@@ -23,6 +31,14 @@ body{
     background-color:#F3F2F0;
     color:#010101;
 }
+
+.light .circle circle{
+    fill: #ffffff;  
+  }
+  
+  .light .triangle path{
+    fill: #D40000;  
+    }
 
 .wrapper{
     
@@ -74,6 +90,27 @@ padding-right: 16px;
     text-decoration: none;
     color:#D40000 ;
     font-size:14px;
+}
+
+.nav-info .nav-item{
+position: relative;
+}
+
+.nav-info .nav-item::before{
+ content: "";
+ display: block;
+ width: 1px;
+ height: 24px;
+ background-color:rgb(243, 242, 240, 0.5);
+ position: absolute;
+ left: 0;
+ top:calc(50%-12px);
+    }
+
+.nav-info .nav-item:first-child::before{
+     
+    display: none;
+     
 }
 
 .social{
@@ -147,3 +184,13 @@ padding-right: 16px;
 .skill .description{
     line-height: 150%;
  }
+
+ circle-main{
+     width: 253px;
+     height: 253px;
+ }
+
+ circle-nav{
+    width: 106px;
+    height: 106px;
+}
